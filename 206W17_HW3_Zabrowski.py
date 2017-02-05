@@ -63,8 +63,18 @@ for x in lst:
 full_paths_num = (len(full_paths_lst))
 print (full_paths_num)
 
-print (full_paths_lst)
+
 ## (c) Write Python code to determine how many of these paths describe a Python file saved inside a folder called SI206. Save that number in the variable python_course_paths.
+python_course_paths_lst = []
+
+for x in lst:
+    files_python = x.strip()
+    if re.findall(r'SI206.*py',x):
+        python_course_paths_lst.append(files_python)
+
+#print (python_course_paths_lst)
+python_course_paths = len(python_course_paths_lst)
+#print (python_course_paths)
 
 
 ## (d) Write Python code to determine how many of these paths describe a Microsoft file (a file that EITHER ends with .docx OR .xlsx, but nothing else counts) where the file name ends in a digit. Save that total in the variable microsoft_files_num.
