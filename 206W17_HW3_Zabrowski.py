@@ -63,7 +63,7 @@ for x in lst:
 full_paths_num = (len(full_paths_lst))
 print (full_paths_num)
 
-#print (full_paths_lst)
+print (full_paths_lst)
 ## (c) Write Python code to determine how many of these paths describe a Python file saved inside a folder called SI206. Save that number in the variable python_course_paths.
 
 
